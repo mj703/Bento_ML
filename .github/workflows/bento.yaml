@@ -9,11 +9,11 @@ jobs:
   build_bento:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v3
-      - uses: bentoml/setup-bentoml-action@v1
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
         with:
           python-version: '3.10'
-          bentoml-version: 'main' 
+          cache: 'pip' # caching pip dependencies
       - name: installing packages
         run: pip install -r requirements.txt
       - name: train bentomodel
