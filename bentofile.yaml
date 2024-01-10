@@ -1,0 +1,10 @@
+service: "service.py:svc"
+labels:
+  owner: ankit
+include:
+  - "service.py"
+python:
+  packages:
+    - numpy
+    - scikit-learn
+
