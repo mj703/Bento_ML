@@ -1,8 +1,8 @@
 name: bento_build
 on:
-  # push:
-  #   branches:
-  #     - 'main'
+  push:
+    branches:
+      - 'main'
   workflow_dispatch:      
 
 jobs:
@@ -34,4 +34,4 @@ jobs:
         with:
           bento-tag: ${{ steps.bento.outputs.bento-tag }}
           push: true
-          tags: mj703/iris_classifier:v1.0.1
+          tags: mj703/iris_classifier:v1.0.2
