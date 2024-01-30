@@ -34,4 +34,4 @@ jobs:
         with:
           bento-tag: ${{ steps.bento.outputs.bento-tag }}
           push: true
-          tags: mj703/iris_classifier:v1.0.3
+          tags: mj703/iris_classifier:v1.0.4
